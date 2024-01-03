@@ -12,7 +12,7 @@ function Navbar() {
     <div className='nav'>
         <div className='nav-logo'>
             <img src={logo} alt=''/>
-            <p>LCP</p>
+            <p><Link style={{textDecoration:'none'}} to="/">LCP</Link></p>
         </div>
         <ul className='nav-menu'>
             <li onClick={()=>setMenu("shops")}><Link style={{textDecoration:'none'}} to='/'>Shop</Link> {menu==='shops'?<hr/>:<></>} </li>
